@@ -22,10 +22,8 @@ const position = db.define('position', {
         type:DataTypes.DATEONLY,
     },
 }, {
-    paranoid:true,
     createdAt: 'created_at',
     updatedAt: 'updated_at',
-    deleteAt: 'deleted_at',
     freezeTablename: true,
 });
 

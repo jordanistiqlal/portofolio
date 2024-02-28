@@ -5,6 +5,8 @@ const dotenv = require('dotenv'); dotenv.config()
 const datawebsite = require('./Modules/datawebsite/Routes/datawebsite.route.js')
 const experience = require('./Modules/experience/Routes/experience.route.js')
 const education = require('./Modules/education/Routes/education.route.js')
+const about = require('./Modules/about/Routes/about.route.js')
+const language = require('./Modules/language/Routes/language.route.js')
 
 const app = express();
 const oneDay = 1000 * 60 * 60 * 24;
@@ -22,6 +24,9 @@ app.use(express.urlencoded({extended: true}));
 
 app.use(education)
 app.use(experience)
+app.use(about)
+app.use(language)
+
 app.use(datawebsite)
 
 app.get('/sse', (req, res) => {

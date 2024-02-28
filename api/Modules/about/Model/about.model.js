@@ -1,31 +1,29 @@
 const Sequelize = require('sequelize');
 const db = require('../../../config/db.js')
-const position = require('./position.model.js')
 
 const DataTypes = Sequelize
 
-const company = db.define('company', {
+const about = db.define('abouts', {
     id: {
         type:Sequelize.UUID,
         primaryKey: true,
         defaultValue: Sequelize.UUIDV4,
     },
-    company: {
-        type:DataTypes.STRING(128),
+    about: {
+        type:DataTypes.TEXT(),
     },
-    company_link: {
-        type:DataTypes.STRING(128),
-    },
+    email: {
+        type:DataTypes.STRING(64),
+    }
 }, {
     createdAt: 'created_at',
     updatedAt: 'updated_at',
     freezeTablename: true,
 });
 
-company.hasMany(position, { foreignKey: 'induk_id' });
 
 (async() => {
     await db.sync()
 })();
 
-module.exports = {company, position}
+module.exports = about

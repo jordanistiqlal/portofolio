@@ -25,10 +25,8 @@ const education = db.define('education', {
         type:DataTypes.STRING(128),
     },
 }, {
-    paranoid:true,
     createdAt: 'created_at',
     updatedAt: 'updated_at',
-    deleteAt: 'deleted_at',
     freezeTablename: true,
 });
 

@@ -79,65 +79,39 @@
 export default {
     data() {
         return {
-            experience : [
-                {
-                    company : 'Sekawan Media',
-                    link: 'https://drive.google.com/file/d/1LZyvT4s7z8rn9okoBmQ9UTp-6vLuLjfS/view?usp=sharing',
-                    position : [
-                        {
-                            'Junior Developer': '2022-05 - 2023-08'
-                        }
-                    ],
-                },
-                {
-                    company : 'Binokular Media Utama',
-                    link: 'https://drive.google.com/file/d/1csAEt0j2vKws7KEOh2djGsKN1tAllxed/view?usp=sharing',
-                    position : [
-                        {
-                            'Magang IT Developer' : '2021-12 - 2022-02'
-                        }
-                    ]
-                },
-                {
-                    company : 'AKPAM',
-                    link: '',
-                    position : [
-                        {
-                            'Lead Data Entry' : '2020 - 2021'
-                        },
-                        {
-                            'Data Entry': '2019 - 2020'
-                        }
-                    ]
-                },
-                {
-                    company : 'Teknik Informatika UNIDA',
-                    link: '',
-                    position : [
-                        {
-                            'Assistant Lecturer' : '2019-01 - 2019-07'
-                        }
-                    ]
-                },
-            ],
-            education : [
-                {
-                    school : 'Institut Teknologi Sepuluh Nopember',
-                    prodi : 'Teknik Informatika',
-                    date : '2023 - Present',
-                    grade: 'Not yet available',
-                    degree : 'Pascasarja'
-                },
-                {
-                    school : 'Universitas Darussalam Gontor',
-                    prodi : 'Teknik Informatika',
-                    date : '2021 - 2022',
-                    grade: '3.49/4.00',
-                    degree : 'S.Kom | Sarjana 1'
-                },
-            ]
+            experience : [],
+            education : []
         }
     },
+    mounted() {
+        this.fetch()
+    },
+    methods: {
+        async fetch(){
+            await Promise.all([
+                this.Experience(),
+                this.Education()
+            ])
+        },
+        async Experience() {
+            await fetch(this.$api+'/experience')
+            .then(response => response.json())
+            .then(data => {
+                this.experience = data
+            }).catch(error => {
+                console.log(error);
+            })
+        },
+        async Education() {
+            await fetch(this.$api+'/education')
+            .then(response => response.json())
+            .then(data => {
+                this.education = data
+            }).catch(error => {
+                console.log(error);
+            })
+        }
+    }
 }
 </script>
 <style>

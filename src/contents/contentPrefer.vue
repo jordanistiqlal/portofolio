@@ -67,49 +67,32 @@
 export default {
     data() {
         return {
-            language: [
-                {
-                    item : 'Indonesia',
-                    link : ['#'],
-                    institution: ['Mother Language'],
-                    grade : ['?'],
-                    date:['2000-02-18']
-                },
-                {
-                    item : 'English',
-                    link : [
-                        'https://jordan-18.github.io/assets/data/Sertifikat%20Bahasa%20Inggris.pdf',
-                        'https://drive.google.com/file/d/1LzuMTFWAsGQVCmeb8cLHdyiAucy83upb/view?usp=sharing'
-                    ],
-                    institution: [
-                        'Pusat Bahasa Universitas Darussalam Gontor',
-                        'Centre of Language Improvement'
-                    ],
-                    grade : [500,507],
-                    date:['2021-08-29', '2023-06-29']
-                },
-                {
-                    item : 'Arabic',
-                    link : [
-                        'https://jordan-18.github.io/assets/data/Sertifikat%20Bahasa%20Arab.pdf'
-                    ],
-                    institution: [
-                        'Pusat Bahasa Universitas Darussalam Gontor'
-                    ],
-                    grade: [ 600 ],
-                    date:['2020-09-24']
-                }
-            ]
+            language: []
         }
     },
     mounted(){
+        this.fetch()
     },  
     methods:{
+        async fetch(){
+            await Promise.all([
+                this.Language()
+            ])
+        },
         truncateText(text, maxLength) {
             if (text.length > maxLength) {
                 return text.slice(0, maxLength) + "...";
             }
             return text;
+        },
+        async Language(){
+            await fetch(this.$api+'/language')
+            .then(response => response.json())
+            .then(data => {
+                this.language = data
+            }).catch(error => {
+                console.log(error);
+            })
         }
     }
 }

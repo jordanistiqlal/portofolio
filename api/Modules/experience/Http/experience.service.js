@@ -9,9 +9,9 @@ module.exports = class experienceService{
 
         const response = data.map((item) => ({
             company: item.company,
-            link: item.company_link || '', // Use empty string if company_link is null
+            link: item.company_link || '',
             position: item.positions.map((positionItem) => ({
-              [positionItem.position]: `${positionItem.position_begin} - ${positionItem.position_end}`,
+              [positionItem.position]: `${positionItem.position_begin.substring(0, 7)} - ${positionItem.position_end.substring(0, 7)}`,
             })),
           }));
         

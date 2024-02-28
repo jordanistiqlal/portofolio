@@ -11,18 +11,6 @@
                                 <div class="post-image">
                                     <img src="@/assets/images/1649130101810.jpeg" style="border-radius: 20px;" alt="corporate template">
                                 </div>
-                                <!-- <div class="position-absolute top-0 left-0 m-5">
-                                    <h5 class="overflow-hidden mb-3"><a class="text-secondary hover-text-primary first-push-up transation" href="#">This Year Will Be The Year of Fashion.</a></h5>
-                                    <div class="text-general overflow-hidden">
-                                        <p class="second-push-up transation">Nostra maecenas malesuada vel lobortis sociis mus aliquam tempor etiam ipsum pretium cursus nullam tortor.</p>
-                                    </div>
-                                </div>
-                                <div class="overflow-hidden position-absolute bottom-0 left-0 m-5">
-                                    <div class="post-meta font-mini third-push-up transation">
-                                        <a href="#"><span>By Robert Haven</span></a>
-                                        <a href="#"><span>Dec 25, 2021</span></a>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
                     </div>

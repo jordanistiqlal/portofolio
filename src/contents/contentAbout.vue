@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="content-split col-md-6">
                     <p className="paragraph text-secondary mb-5">
-                        I am a graduate of S1 Informatics Engineering with an experience in the field of web developer for more than 1 year. A person who is very creative and innovative in finding a solution to a problem so that i can get a good solution. Have good verbal and verbal communication skills. I'm interested in the development of an app, especially in website development, I'm more focused on website development that can simplify a performance so as to simplify a task at work. This makes it easier and faster for workers to complete their work.
+                       {{ about }}
                     </p>
                 </div>
 
@@ -54,7 +54,7 @@
                                     <p>:</p>
                                 </div>
                                 <div class="col-9">
-                                    <a href="Mailto:jordanistiqlal18@gmail.com"><i class="fas fa-mail-bulk" title="email"></i></a>
+                                    <a :href="email"><i class="fas fa-mail-bulk" title="email"></i></a>
                                 </div>
                             </div>
                             
@@ -72,10 +72,30 @@ export default {
         return {
             year : new Date().getFullYear(),
             age : 0,
+            about : '',
+            email : '',
         }
     },
     mounted(){
+        this.fetch()
         this.age = this.year - 2000
+    },
+    methods: {
+        async fetch(){
+            await Promise.all([
+                this.About(),
+            ])
+        },
+        async About(){
+            await fetch(this.$api+'/about')
+            .then(response => response.json())
+            .then(data => {
+                this.about = data[0].about
+                this.email = 'mailto:' + data[0].email
+            }).catch(error => {
+                console.log(error);
+            })
+        }
     }
 }
 </script>
