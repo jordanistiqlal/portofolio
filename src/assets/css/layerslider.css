@@ -269,12 +269,12 @@
 }
 
 .ls-icon-muted {
-    background-image: url(../images/icon-muted-white.png);
+    background-color: #888;
     opacity: 1;
 }
 
 .ls-icon-unmuted {
-    background-image: url(../images/icon-unmuted-white.png);
+    background-color: #888;
     opacity: 0;
 }
 

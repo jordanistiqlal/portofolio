@@ -13,7 +13,7 @@
                         <br>
                         <div class="row">
                             <template v-for="(v,i) in experience" :key="i">
-                                <div class="col-sm-3">
+                                <div class="col-sm-3 mb-4">
                                     <div class="card mb-1">
                                     <div class="card-body">
                                         <h5 class="card-secondary" style="font-size: 12pt;">{{v.company}}</h5>

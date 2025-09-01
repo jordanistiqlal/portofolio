@@ -3,6 +3,5 @@ import App from './App.vue'
 import '@/style.js'
 
 const app = createApp(App)
-// app.config.globalProperties.$api = 'http://localhost:5009'
-app.config.globalProperties.$api = 'https://api.jordanistiqlal.my.id'
+app.config.globalProperties.$api = process.env.VUE_APP_MAIN_API
 app.mount('#app')

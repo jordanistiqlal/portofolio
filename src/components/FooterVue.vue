@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <span>© {{ year }} Jordan I.</span>
+                    <span>© {{ year }} Jordan Istiqlal Qalbi Adiba.</span>
                 </div>
             </div>
         </div>

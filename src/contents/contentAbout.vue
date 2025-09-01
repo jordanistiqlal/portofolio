@@ -17,7 +17,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="post-image">
-                                <img src="@/assets/images/sq-17.png" style="border-radius: 20px;" height="80" width="80" alt="corporate template">
+                                <!-- <img src="@/assets/images/sq-17.png" style="border-radius: 20px;" height="80" width="80" alt="corporate template"> -->
                             </div>
                         </div>
                         <div class="col-md-8">
