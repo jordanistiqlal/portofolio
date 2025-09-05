@@ -1,0 +1,86 @@
+[
+    {
+        "year": "2025",
+        "color": "#FFA500",
+        "title": "Institut Teknologi Sepuluh Nopember",
+        "type": "education",
+        "positions": [
+            {
+                "name": "Teknik Informatika",
+                "period": "2023 - 2025"
+            }
+        ],
+        "degree": "M.Kom | Magister",
+        "grade": "3.71/4.00"
+    },
+    {
+        "year": "2023",
+        "color": "#3498db",
+        "title": "Sekawan Media",
+        "type": "software-developer",
+        "positions": [
+            {
+                "name": "Lead Engineer",
+                "period": "2023-06-01 - 2023-08-20"
+            },
+            {
+                "name": "Backend Developer",
+                "period": "2022-05-09 - 2023-05-31"
+            }
+        ]
+    },
+    {
+        "year": "2022",
+        "color": "#3498db",
+        "title": "Binokular Media Utama",
+        "type": "software-developer",
+        "positions": [
+            {
+                "name": "Intership Software Developer",
+                "period": "2021-12-01 - 2022-02-28"
+            }
+        ]
+    },
+    {
+        "year": "2022",
+        "color": "#FFA500",
+        "title": "Universitas Darussalam Gontor",
+        "type": "education",
+        "positions": [
+            {
+                "name": "Teknik Informatika",
+                "period": "2021 - 2022"
+            }
+        ],
+        "degree": "S.Kom | Sarjana",
+        "grade": "3.49/4.00"
+    },
+    {
+        "year": "2021",
+        "color": "#808080",
+        "title": "Angka Kredit Penunjang Akademik UNIDA (AKPAM)",
+        "type": "others",
+        "positions": [
+            {
+                "name": "Lead Data",
+                "period": "2020-08-01 - 2021-01-30"
+            },
+            {
+                "name": "Data",
+                "period": "2019-01-01 - 2020-07-30"
+            }
+        ]
+    },
+    {
+        "year": "2019",
+        "color": "#808080",
+        "title": "Teknik Informatika UNIDA",
+        "type": "others",
+        "positions": [
+            {
+                "name": "Assistant Lecturer",
+                "period": "2019-01-01 - 2019-07-30"
+            }
+        ]
+    }
+]

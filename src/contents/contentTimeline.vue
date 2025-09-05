@@ -54,6 +54,8 @@
 </template>
 
 <script>
+import timelinejsondata from '../data/timeline.json'
+
 export default {
     data() {
         return {
@@ -87,6 +89,13 @@ export default {
 
                 }).catch(error => {
                     console.log(error);
+                    
+                    this.timeline = timelinejsondata
+                    this.timelineItems = timelinejsondata
+
+                    Promise.all([
+                        this.filterExperience()
+                    ])
                 })
             } catch (error) {
                 console.log(error);

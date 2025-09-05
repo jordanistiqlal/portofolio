@@ -59,6 +59,8 @@
 </template>
 
 <script>
+import tagsjsondata from '../data/tags.json'
+
 export default {
     data() {
         return {
@@ -81,6 +83,8 @@ export default {
                 this.preferred = data
             }).catch(error => {
                 console.log(error);
+
+                this.preferred = tagsjsondata
             })
         },
         getIconClass(tag) {

@@ -1,0 +1,55 @@
+[
+    {
+        "item": "English",
+        "link": [
+            "https://drive.google.com/file/d/1pL4abvzlgkEM6GHsx9ANHlAxCI0nQ5E1/view?usp=sharing",
+            "https://drive.google.com/file/d/1LzuMTFWAsGQVCmeb8cLHdyiAucy83upb/view?usp=sharing",
+            "https://jordan-18.github.io/portofolio.old/assets/data/Sertifikat%20Bahasa%20Inggris.pdf"
+        ],
+        "institution": [
+            "EFL ITS",
+            "Centre of Language Improvement",
+            "Pusat Bahasa Universitas Darussalam Gontor"
+        ],
+        "grade": [
+            "493",
+            "507",
+            "500"
+        ],
+        "date": [
+            "2025-06-18",
+            "2023-06-29",
+            "2021-08-29"
+        ]
+    },
+    {
+        "item": "Arabic",
+        "link": [
+            "https://jordan-18.github.io/portofolio.old/assets/data/Sertifikat%20Bahasa%20Arab.pdf"
+        ],
+        "institution": [
+            "Pusat Bahasa Universitas Darussalam Gontor"
+        ],
+        "grade": [
+            "600"
+        ],
+        "date": [
+            "2020-09-24"
+        ]
+    },
+    {
+        "item": "Indonesia",
+        "link": [
+            "#"
+        ],
+        "institution": [
+            "Mother Language"
+        ],
+        "grade": [
+            "#"
+        ],
+        "date": [
+            "2000-02-18"
+        ]
+    }
+]

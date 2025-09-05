@@ -38,6 +38,8 @@
 </template>
 
 <script>
+import languagejsondata from '../data/language.json'
+
 export default {
     data() {
         return {
@@ -66,6 +68,7 @@ export default {
                 this.language = data
             }).catch(error => {
                 console.log(error);
+                this.language = languagejsondata
             })
         }
     }

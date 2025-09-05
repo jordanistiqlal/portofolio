@@ -1,0 +1,126 @@
+[
+    {
+        "Tag": "Laravel",
+        "Total": 7
+    },
+    {
+        "Tag": "Jquery",
+        "Total": 5
+    },
+    {
+        "Tag": "CodeIgniter",
+        "Total": 4
+    },
+    {
+        "Tag": "Flask",
+        "Total": 3
+    },
+    {
+        "Tag": "Vuejs",
+        "Total": 3
+    },
+    {
+        "Tag": "Similarity",
+        "Total": 2
+    },
+    {
+        "Tag": "MCDM",
+        "Total": 2
+    },
+    {
+        "Tag": "Forecasting",
+        "Total": 2
+    },
+    {
+        "Tag": "LSTM",
+        "Total": 2
+    },
+    {
+        "Tag": "RabbitMQ",
+        "Total": 2
+    },
+    {
+        "Tag": "SVM",
+        "Total": 2
+    },
+    {
+        "Tag": "Fuzzy",
+        "Total": 2
+    },
+    {
+        "Tag": "Midtrans",
+        "Total": 2
+    },
+    {
+        "Tag": "React",
+        "Total": 1
+    },
+    {
+        "Tag": "Moora",
+        "Total": 1
+    },
+    {
+        "Tag": "ARIMA",
+        "Total": 1
+    },
+    {
+        "Tag": "Zenziva",
+        "Total": 1
+    },
+    {
+        "Tag": "RNN",
+        "Total": 1
+    },
+    {
+        "Tag": "Kmeans",
+        "Total": 1
+    },
+    {
+        "Tag": "DecisionTree",
+        "Total": 1
+    },
+    {
+        "Tag": "RandomForest",
+        "Total": 1
+    },
+    {
+        "Tag": "ANN",
+        "Total": 1
+    },
+    {
+        "Tag": "Flutter",
+        "Total": 1
+    },
+    {
+        "Tag": "UI-UX",
+        "Total": 1
+    },
+    {
+        "Tag": "Object Storage",
+        "Total": 1
+    },
+    {
+        "Tag": "Topsis",
+        "Total": 1
+    },
+    {
+        "Tag": "Kotlin",
+        "Total": 1
+    },
+    {
+        "Tag": "Wordpress",
+        "Total": 1
+    },
+    {
+        "Tag": "Web Socket",
+        "Total": 1
+    },
+    {
+        "Tag": "Redis",
+        "Total": 1
+    },
+    {
+        "Tag": "Docker",
+        "Total": 1
+    }
+]

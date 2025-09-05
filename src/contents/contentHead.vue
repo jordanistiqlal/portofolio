@@ -42,6 +42,8 @@
 </template>
 
 <script>
+import aboutjsondata from '../data/about.json'
+
 export default {
     data() {
         return {
@@ -69,6 +71,9 @@ export default {
                 this.email = 'mailto:' + data[0].email
             }).catch(error => {
                 console.log(error);
+
+                this.about = aboutjsondata[0].about
+                this.email = 'mailto:' + aboutjsondata[0].email
             })
         }
     }
