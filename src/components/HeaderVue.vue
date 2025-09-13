@@ -25,15 +25,9 @@
                   <li class="nav-item" :class="{ active: activeSection === '#'}">
                     <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li class="nav-item" :class="{ active: activeSection === '#timeline'}">
-                    <a class="nav-link" href="#timeline">Experience</a>
-                  </li>
-                  <!-- <li class="nav-item" :class="{ active: activeSection === '#about'}">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
                   <li class="nav-item" :class="{ active: activeSection === '#experience'}">
-                    <a class="nav-link" href="#experience">Experience & Education</a>
-                  </li> -->
+                    <a class="nav-link" href="#experience">Experience</a>
+                  </li>
                   <li class="nav-item" :class="{ active: activeSection === '#languange'}">
                     <a class="nav-link" href="#languange">Languange</a>
                   </li>
@@ -60,7 +54,7 @@ export default {
       isSticky: false,
       activeSection: "#",
       observer: null,
-      sections: ["#", "#about", "#timeline", "#languange", "#preferred", "#my-portofolio", "#experience"],
+      sections: ["#", "#experience", "#languange", "#preferred", "#my-portofolio"],
     };
   },
   methods: {
@@ -73,7 +67,7 @@ export default {
       }
     },
     initObserver() {
-      const options = { threshold: 0.3 }; // setengah layar dianggap aktif
+      const options = { threshold: 0.5 }; // setengah layar dianggap aktif
       this.observer = new IntersectionObserver((entries) => {     
         entries.forEach((entry) => {
           if (entry.isIntersecting) {

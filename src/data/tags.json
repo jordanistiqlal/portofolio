@@ -16,23 +16,7 @@
         "Total": 3
     },
     {
-        "Tag": "Vuejs",
-        "Total": 3
-    },
-    {
         "Tag": "Similarity",
-        "Total": 2
-    },
-    {
-        "Tag": "MCDM",
-        "Total": 2
-    },
-    {
-        "Tag": "Forecasting",
-        "Total": 2
-    },
-    {
-        "Tag": "LSTM",
         "Total": 2
     },
     {
@@ -40,11 +24,7 @@
         "Total": 2
     },
     {
-        "Tag": "SVM",
-        "Total": 2
-    },
-    {
-        "Tag": "Fuzzy",
+        "Tag": "Vuejs",
         "Total": 2
     },
     {
@@ -56,11 +36,11 @@
         "Total": 1
     },
     {
-        "Tag": "Moora",
+        "Tag": "MCDM",
         "Total": 1
     },
     {
-        "Tag": "ARIMA",
+        "Tag": "Moora",
         "Total": 1
     },
     {
@@ -68,23 +48,11 @@
         "Total": 1
     },
     {
-        "Tag": "RNN",
+        "Tag": "Machine Learning",
         "Total": 1
     },
     {
-        "Tag": "Kmeans",
-        "Total": 1
-    },
-    {
-        "Tag": "DecisionTree",
-        "Total": 1
-    },
-    {
-        "Tag": "RandomForest",
-        "Total": 1
-    },
-    {
-        "Tag": "ANN",
+        "Tag": "Deep Learning",
         "Total": 1
     },
     {

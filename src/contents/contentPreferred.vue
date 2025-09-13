@@ -17,19 +17,26 @@
                                     <div class="col-2 tag-icon">
                                         <i :class="getIconClass(value.Tag)"></i>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-8">
                                         <p>{{ value.Tag }}</p>
                                     </div>
-                                    <div class="col-2">
+                                    <!-- <div class="col-2">
                                         <span class="badge bg-primary">
                                             {{ value.Total }}
                                         </span>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </template>
 
                         <!-- not loop -->
+                        <div class="card tag-card">
+                            <div class="row card-body" style=" padding-top: 5px;  padding-bottom: 5px; padding-left: 0px; padding-right: 0px;">
+                                <div class="col-2 tag-icon"><i class="fab fa-node-js" title="github"></i></div>
+                                <div class="col-6"><p>Express</p></div>
+                                <div class="col-2"></div>
+                            </div>
+                        </div>
                         <div class="card tag-card">
                             <div class="row card-body" style=" padding-top: 5px;  padding-bottom: 5px; padding-left: 0px; padding-right: 0px;">
                                 <div class="col-2 tag-icon"><i class="fab fa-github" title="github"></i></div>

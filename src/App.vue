@@ -3,21 +3,17 @@
   import FooterVue from './components/FooterVue.vue';
 
   import contentHead from './contents/contentHead.vue';
-  // import contentAbout from './contents/contentAbout.vue';
-  // import contentExperience from './contents/contentExperience.vue';
   import contentLanguange from './contents/contentLanguange.vue';
   import contentPreferred from './contents/contentPreferred.vue';
   import contentPortofolio from './contents/contentPortofolio.vue';
-  import contentTimeline from './contents/contentTimeline.vue';
+  import contentExperience from './contents/contentExperience.vue';
 </script>
 <template>
   <HeaderVue />
 
   
   <contentHead />
-  <!-- <contentAbout /> -->
-   <contentTimeline />
-  <!-- <contentExperience /> -->
+  <contentExperience />
   <contentLanguange />
   <contentPreferred />
   <contentPortofolio />
