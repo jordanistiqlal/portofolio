@@ -82,5 +82,29 @@
                 "period": "2019-01-01 - 2019-07-30"
             }
         ]
+    },
+    {
+        "year": "2018",
+        "color": "#808080",
+        "title": "Gazebo DM3",
+        "type": "others",
+        "positions": [
+            {
+                "name": "Receptionist",
+                "period": "2017-04-01 - 2018-04-30"
+            }
+        ]
+    },
+    {
+        "year": "2017",
+        "color": "#808080",
+        "title": "Darul Ma`rifat",
+        "type": "others",
+        "positions": [
+            {
+                "name": "Mudarris Darsul masa`",
+                "period": "2017-01-15 - 2017-06-30"
+            }
+        ]
     }
 ]

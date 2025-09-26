@@ -159,6 +159,9 @@ export default {
         border-radius: 6px;
         position: relative;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        overflow-wrap: break-word;
+        box-sizing: border-box;
+        max-width: 100%;
     }
     .point {
         position: absolute;
@@ -184,79 +187,81 @@ export default {
     .study-info h6{
         margin: 0;
     }
-</style>
 
-<style scoped>
-@media screen and (max-width: 991.98px){
-    .checkbox-group {
-        justify-content: center !important;
+    @media screen and (max-width: 991.98px){
+        .checkbox-group {
+            justify-content: center !important;
+        }
+        .content{
+            width: 100%;
+            margin: 0;
+        }
     }
-}
-.checkbox-group {
-  display: flex;
-  gap: 30px; /* jarak antar checkbox */
-  justify-content: flex-end; /* condong ke kanan */
-  padding-right: 50px;
-}
+    .checkbox-group {
+        display: flex;
+        gap: 30px; /* jarak antar checkbox */
+        justify-content: flex-end; /* condong ke kanan */
+        padding-right: 50px;
+    }
 
-.checkbox-wrapper {
-  position: relative;
-  display: inline-block;
-}
+    .checkbox-wrapper {
+        position: relative;
+        display: inline-block;
+    }
 
-.checkbox-input {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+    .checkbox-input {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
 
-  width: 30px;
-  height: 30px;
-  transform: rotate(45deg);
-  border: 2px solid #ccc;
-  border-radius: 6px; /* rounded corner */
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
+        width: 30px;
+        height: 30px;
+        transform: rotate(45deg);
+        border: 2px solid #ccc;
+        border-radius: 6px; /* rounded corner */
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
 
-/* Warna unik */
-.checkbox-input.software { border-color: #3498db; }
-.checkbox-input.education { border-color: #FFA500; }
-.checkbox-input.others { border-color: #808080; }
+    /* Warna unik */
+    .checkbox-input.software { border-color: #3498db; }
+    .checkbox-input.education { border-color: #FFA500; }
+    .checkbox-input.others { border-color: #808080; }
 
-.checkbox-input.software:checked { background-color: #3498db; }
-.checkbox-input.education:checked { background-color: #FFA500; }
-.checkbox-input.others:checked { background-color: #808080; }
+    .checkbox-input.software:checked { background-color: #3498db; }
+    .checkbox-input.education:checked { background-color: #FFA500; }
+    .checkbox-input.others:checked { background-color: #808080; }
 
-.checkbox-input:checked::after {
-  content: "✔";
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -60%) rotate(-45deg); /* biar lurus di diamond */
-  font-size: 24px;
-  color: white;
-  font-weight: bold;
-}
+    .checkbox-input:checked::after {
+        content: "✔";
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -60%) rotate(-45deg); /* biar lurus di diamond */
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+    }
 
-/* Label hidden by default */
-.checkbox-label {
-  position: absolute;
-  top: 40px; /* muncul di bawah kotak */
-  left: 50%;
-  transform: translateX(-50%);
-  background: #fff;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  white-space: nowrap;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s;
-}
+    /* Label hidden by default */
+    .checkbox-label {
+        position: absolute;
+        top: 40px; /* muncul di bawah kotak */
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        white-space: nowrap;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s;
+    }
 
-/* Show label on hover */
-.checkbox-input:hover + .checkbox-label {
-  opacity: 1;
-}
+    /* Show label on hover */
+    .checkbox-input:hover + .checkbox-label {
+        opacity: 1;
+    }
 </style>
